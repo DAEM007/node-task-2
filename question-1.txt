@@ -1,0 +1,22 @@
+---REACTOR PATTERN---
+
+Reactor Pattern is used to avoid the blocking of the Input/Output operations. It provides us with a handler that is associated with I/O operations. When the I/O requests are to be generated, they get submitted to a demultiplexer, which handles concurrency in avoiding the blocking of the I/O mode and collects the requests in form of an event and queues those events. 
+
+There are two ways in which I/O operations are performed:
+
+1. Blocking I/O: Application will make a function call and pause its execution at a point until the data is received. It is called as ‘Synchronous’.
+2. Non-Blocking I/O: Application will make a function call, and, without waiting for the results it continues its execution. It is called as ‘Asynchronous’.
+Note: Node.js is Asynchronous in nature.
+
+---CALLBACK PATTERN---
+
+A callback is a function that is called when a task is completed, thus helping in preventing any kind of blocking and a callback function allows other code to run in the meantime. Callback is called when a task gets completed and is the asynchronous equivalent of a function. Using the Callback concept, Node.js can process a large number of requests without waiting for any function to return the result which makes Node.js highly scalable. For example: In Node.js, when a function starts reading the file, it returns the control to the execution environment immediately so that the next instruction can be executed. Once file I/O gets completed, the callback function will get called to avoid blocking or waiting for File I/O.
+
+---MODULE SYSTEM---
+Modules are the blocks of encapsulated code that communicate with an external application on the basis of their related functionality. Modules can be a single file or a collection of multiple files/folders. The reason programmers are heavily reliant on modules is because of their reusability as well as the ability to break down a complex piece of code into manageable chunks. 
+
+Modules are of three types:
+
+1. Core Modules
+2. local Modules
+3. Third-party Modules
